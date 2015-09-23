@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Ubuntu Install Party</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="node_modules/reveal.js/css/theme/white.css" id="theme">
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+  if (window.location.search.match(/print-pdf/gi)) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'node_modules/reveal.js/css/print/pdf.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }
+  </script>
+
+  <link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Linux Install Party</h1>
+        <img src="img/tux.png" alt="GNU/Linux logo">
+        <aside class="notes">
+          Hola, bienvenidos... Etc.
+        </aside>
+      </section>
+      <section>
+        <section>
+          <h2>¿Por qué GNU/Linux?</h2>
+          <img src="img/please-tell-me-why.jpg">
+        </section>
+        <section>
+          <h2>Gratis</h2>
+          <p>No tienes que pagar 100 euros por un Sistema Operativo</p>
+          <img src="img/micro$oft.jpg">
+        </section>
+        <section>
+          <h2>Libre</h2>
+          <ul>
+            <li>
+              Kernel abierto bajo licencia GPL
+            <li>
+              No te gusta algo? Aprende a programar C y cámbialo! <small class="fragment">(Más o menos)</small>
+          </ul>
+        </section>
+        <section>
+          <!-- Plz kill me I'm using inline CSS -->
+          <div class="stretch">
+            <img src="img/stallman.jpg" style="width: 48%; float: left;">
+            <img src="img/gnu.png" style="width: 48%; float: right">
+          </div>
+        </section>
+        <section>
+          <h2>No te espía</h2>
+          <img src="img/windows-spying.png">
+        </section>
+        <section>
+          <h2>Control total</h2>
+          <ul>
+            <li class="fragment">
+              Es un doble filo
+              <img class="fragment" style="float: right;" src="img/y-u-no.jpg">
+            <li class="fragment">
+              Con un poco de suerte aprenderás un poquito cada vez.
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>¿Qué distribución coger?</h2>
+          <img class="fragment" src="img/linux-distros.jpg">
+
+          <aside class="notes">
+            Ya que os habéis decidido... O no, pero lo vais a tener que usar igualmente...
+          </aside>
+        </section>
+        <section>
+          <h2>Debian</h2>
+          <img src="img/debian-logo.png" style="max-width: 300px;">
+          <div>
+            <ul class="fragment">
+              <li>
+                Comunidad enorme
+              <li>
+                Sistema muy estable
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Ubuntu</h2>
+          <img src="img/ubuntu-logo.png" style="max-width: 300px;">
+          <div>
+            <ul class="fragment">
+              <li>
+                Basado en Debian
+              <li>
+                Probablemente la más <em>agradable</em> para novatos.
+              <li>
+                Paquetes preconfigurados, buena interfaz gráfica
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Arch Linux</h2>
+          <img src="img/arch-linux.png">
+          <div>
+            <ul class="fragment">
+              <li>
+                Simple
+              <li>
+                Moderno
+              <li>
+                Versátil
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Otras</h2>
+          <ul>
+            <li class="fragment">
+              Fedora
+            <li class="fragment">
+              Linux Mint
+            <li class="fragment">
+              OpenSUSE
+            <li class="fragment">
+              ...
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>¿Máquina virtual o no?</h2>
+          <p>
+            Una máquina virtual es una emulación de un sistema real... Para lo que nos concierne es
+            un S.O. sobre otro.
+          </p>
+        </section>
+        <section>
+          <h2>Pros</h2>
+          <ul>
+            <li>
+              Sandbox <small class="fragment">No se comerá tu colada (ni puede borrar todo tu disco duro)</small>
+            <li class="fragment">
+              Flexibilidad
+            <li class="fragment">
+              Facilidad de instalación
+          </ul>
+        </section>
+        <section>
+          <h2>Contras</h2>
+          <ul>
+            <li class="fragment">
+              Más lento (a veces mucho)
+            <li class="fragment">
+              Peor soporte de determinado hardware (no suele ser muy problemático)
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h1>¿Preguntas?</h1>
+        <img class="fragment" src="img/ask.jpg">
+      </section>
+    </div>
+  </div>
+
+  <script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+  <script src="node_modules/reveal.js/js/reveal.js"></script>
+
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    transition: 'slide',
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [{
+      src: 'node_modules/reveal.js/lib/js/classList.js',
+      condition: function() {
+        return !document.body.classList;
+      }
+    }, {
+      src: 'node_modules/reveal.js/plugin/markdown/marked.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'node_modules/reveal.js/plugin/markdown/markdown.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'node_modules/reveal.js/plugin/highlight/highlight.js',
+      async: true,
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }, {
+      src: 'node_modules/reveal.js/plugin/zoom-js/zoom.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }, {
+      src: 'node_modules/reveal.js/plugin/notes/notes.js',
+      async: true,
+      condition: function() {
+        return !!document.body.classList;
+      }
+    }]
+  });
+  </script>
+</body>
+</html>

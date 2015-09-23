@@ -1,0 +1,24 @@
+{
+  "name": "linux-install-party",
+  "version": "0.1.0",
+  "description": "Intro para la Linux Install Party",
+  "author": {
+    "name": "ACM USAL Chapter",
+    "url": "http://usal.acm.org"
+  },
+  "contributors": [
+    {
+      "name": "Emilio Cobos Álvarez",
+      "email": "emiliocobos@usal.es",
+      "url": "http://emiliocobos.me"
+    }
+  ],
+  "dependencies": {
+    "reveal.js": "3.1.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
